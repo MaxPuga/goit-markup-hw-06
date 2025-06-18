@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+
+    <!-- HEADER SECTION -->
+
     <header class="page-header">
       <div class="container header-container">
         <nav class="header-nav">
@@ -47,20 +50,100 @@
           </ul>
         </address>
 
-        <button type="button" class="burger-btn">
+        <button class="burger-btn" type="button" data-menu-open>
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-solid_menu"></use>
           </svg>
         </button>
       </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close>
+                      <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+          </button>
+          
+          <nav class="mobile-menu-nav">
+          <ul class="menu-page-nav">
+            <li>
+              <a href="./index.html" class="menu-header-link">Studio</a>
+            </li>
+            <li><a href="" class="menu-header-link">Portfolio</a></li>
+            <li><a href="" class="menu-header-link">Contacts</a></li>
+          </ul>
+          </nav>
+          <div class="mob-menu-contacts">
+        <address class="menu-address">
+          <ul class="menu-contacts-list">
+            <li class="menu-email">
+              <a href="mailto:info@devstudio.com" class="menu-header-link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="menu-tel">
+              <a href="tel:+110001111111" class="menu-header-link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        </div>
+                        <ul class="menu-social-links">
+                  <li class="menu-section-circle">
+                    <a
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      class="menu-link"
+                      ><svg class="menu-section-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="menu-section-circle">
+                    <a href="https://x.com/" target="_blank" class="menu-link"
+                      ><svg class="menu-section-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="menu-section-circle">
+                    <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      class="menu-link"
+                      ><svg class="menu-section-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="menu-section-circle">
+                    <a
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      class="menu-link"
+                      ><svg class="menu-section-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+        </div>
+      </div>
     </header>
     <main>
+
+      <!-- HERO SECTION -->
+
       <section class="hero-board">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button class="hero-button" type="button" data-modal-open>Order Service</button>
         </div>
       </section>
+
+      <!-- BENEFITS SECTION -->
 
       <section class="benefits">
         <div class="container">
@@ -117,6 +200,8 @@
           </ul>
         </div>
       </section>
+
+      <!-- TEAM SECTION -->
 
       <section class="team-list-bg">
         <div class="team-container">
@@ -334,6 +419,8 @@
         </div>
       </section>
 
+      <!-- PORTFOLIO SECTION -->
+
       <section class="section">
         <div class="container">
           <h2 class="team-title portfolio">Our Portfolio</h2>
@@ -342,6 +429,7 @@
               <div class="portfolio-cover">
                 <img
                   class="image-cover"
+                  srcset="./images/1-img.jpg 1x, ./images/1-img@2x.jpg 2x"
                   src="./images/1-img.jpg"
                   alt="Banking App"
                   width="360"
@@ -362,6 +450,7 @@
               <div class="portfolio-cover">
                 <img
                   class="image-cover"
+                  srcset="./images/2-img.jpg 1x, ./images/2-img@2x.jpg 2x"
                   src="./images/2-img.jpg"
                   alt="Cashless Payment"
                   width="360"
@@ -382,6 +471,7 @@
               <div class="portfolio-cover">
                 <img
                   class="image-cover"
+                  srcset="./images/3-img.jpg 1x, ./images/3-img@2x.jpg 2x"
                   src="./images/3-img.jpg"
                   alt="Meditation App"
                   width="360"
@@ -402,6 +492,7 @@
               <div class="portfolio-cover">
                 <img
                   class="image-cover"
+                  srcset="./images/4-img.jpg 1x, ./images/4-img@2x.jpg 2x"
                   src="./images/4-img.jpg"
                   alt="Taxi Service"
                   width="360"
@@ -422,6 +513,7 @@
               <div class="portfolio-cover">
                 <img
                   class="image-cover"
+                  srcset="./images/5-img.jpg 1x, ./images/5-img@2x.jpg 2x"
                   src="./images/5-img.jpg"
                   alt="Screen Illustrations"
                   width="360"
@@ -442,6 +534,7 @@
               <div class="portfolio-cover">
                 <img
                   class="image-cover"
+                  srcset="./images/6-img.jpg 1x, ./images/6-img@2x.jpg 2x"
                   src="./images/6-img.jpg"
                   alt="Online Courses"
                   width="360"
@@ -463,7 +556,7 @@
       </section>
     </main>
 
-    <!-- FOOTER SECTION
+    <!-- FOOTER SECTION -->
 
     <footer class="footer">
       <div class="footer-container">
@@ -540,13 +633,11 @@
       </div>
     </footer>
 
-    -->
+    <!-- MODAL SECTION -->
 
-    <!-- MODAL SECTION
-
-    <div class="backdrop">
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close-btn">
+        <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
@@ -622,8 +713,7 @@
                 ><svg class="check-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-checkbox"></use>
                 </svg>
-              </span>
-              I accept the terms and conditions of the&nbsp;<a
+              </span>I accept the terms and conditions of the&nbsp;<a
                 href="/"
                 class="modal-link"
                 >Privacy Policy</a
@@ -634,8 +724,7 @@
         </form>
       </div>
     </div>
-
-    -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
